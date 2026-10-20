@@ -6,11 +6,8 @@
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/)
 [![Platform](https://img.shields.io/badge/Platform-Windows-0078D6.svg)](https://www.microsoft.com/windows)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Built with AI Assistance](https://img.shields.io/badge/built%20with-AI%20Assistance-8A2BE2.svg)](#)
 [![Languages](https://img.shields.io/badge/Languages-EN%20%7C%20%ED%95%9C%EA%B5%AD%EC%96%B4%20%7C%20%E4%B8%AD%E6%96%87%20%7C%20%E6%97%A5%E6%9C%AC%E8%AA%9E-orange.svg)](#multilingual-support)
-
-> [!NOTE]
-> **AI Assisted Development**: This project and its core algorithms were designed, developed, and optimized with the assistance of Generative AI tools (Antigravity / Gemini).  
-> **AI 도구 활용 명시**: 본 프로젝트 및 핵심 알고리즘은 AI 개발 도구(Antigravity / Gemini)의 지원을 받아 설계 및 구현되었습니다.
 
 ---
 
