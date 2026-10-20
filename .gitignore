@@ -1,5 +1,5 @@
-# Built application files
-*.apk
+﻿# Built application files
+!CommentCrop.apk
 *.aab
 *.ap_
 *.dex
@@ -53,3 +53,4 @@ screenshots/
 .DS_Store
 Thumbs.db
 desktop.ini
+
