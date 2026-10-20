@@ -8,7 +8,7 @@ Available for **Windows** and **Android**.
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Languages](https://img.shields.io/badge/Languages-EN%20%7C%20%ED%95%9C%EA%B5%AD%EC%96%B4%20%7C%20%E4%B8%AD%E6%96%87%20%7C%20%E6%97%A5%E6%9C%AC%E8%AA%9E-orange.svg)](#)
 
-All image processing runs 100% locally on your device without sending any data to external servers.
+All image processing runs 100% locally on your device using on-device vision AI (no cloud servers, completely private and offline).
 
 ---
 
@@ -16,12 +16,18 @@ All image processing runs 100% locally on your device without sending any data t
 
 Download: **[CommentCrop.apk](CommentCrop.apk)** (Requires Android 8.0+)
 
+### Highlights
+- **On-Device Vision AI**: Uses ML Kit OCR to filter out messy comment text, IDs, and timestamps, isolating pure meme image boundaries.
+- **Tap-to-Snap**: Tap anywhere on a meme inside the screenshot preview, and the crop box snaps tightly to the image borders automatically.
+- **System Share Integration**: Crop immediately after taking a screenshot via system Share without switching apps.
+- **Batch Cropping**: Pick multiple screenshots from your gallery to auto-crop them all in one go.
+
 ### How to use
 1. Download and install `CommentCrop.apk` on your phone.
-2. Take a screenshot of a comment thread.
+2. Take a screenshot of any comment thread with a photo/meme.
 3. Tap system **Share** → **CommentCrop**.
-4. The app detects the image border automatically. Tap **Crop** to save, or **Copy** to paste into chat apps.
-5. You can also open the app to pick multiple screenshots and batch-crop them at once.
+4. The AI highlights the detected meme. Tap **Crop** to save, or **Copy** to paste directly into chats. (You can also tap anywhere on the image to re-snap, or adjust manually).
+5. Open the app directly to batch-crop multiple screenshots or manage saved memes.
 
 ---
 
@@ -50,18 +56,25 @@ Both versions support English, Korean (한국어), Chinese (中文), and Japanes
 
 ## 🇰🇷 한국어 요약
 
-유튜브, 트위터(X), 인스타그램, 커뮤니티 댓글에 달린 짤방(사진/밈)을 자동으로 깔끔하게 잘라주는 툴입니다. 외부 서버 전송 없이 내 기기에서 100% 오프라인으로 작동합니다.
+유튜브, 트위터(X), 인스타그램, 커뮤니티 댓글에 달린 짤방(사진/밈)을 자동으로 깔끔하게 잘라주는 툴입니다. 외부 서버 전송 없이 스마트폰/PC에서 100% 로컬로 작동합니다.
 
-- **안드로이드 앱 ([CommentCrop.apk](CommentCrop.apk))**: 캡처 후 시스템 [공유] → [CommentCrop]을 누르면 팝업에서 바로 짤을 자동 인식해 자르고 복사/저장할 수 있습니다. 메인 화면에서 여러 사진 일괄 크롭도 지원합니다.
+- **안드로이드 앱 ([CommentCrop.apk](CommentCrop.apk))**:
+  - **온디바이스 비전 AI**: 텍스트를 감지해 걸러내고 순수 짤 영역만 정밀하게 인식합니다.
+  - **Tap-to-Snap**: 화면 속 짤을 손가락으로 툭 터치하면 테두리에 자석처럼 딱 달라붙습니다.
+  - **초간편 사용**: 캡처 후 시스템 [공유] → [CommentCrop]을 누르면 즉시 크롭 및 복사/저장.
+  - 앱에서 여러 스크린샷을 한 번에 일괄 자동 크롭할 수도 있습니다.
 - **윈도우 PC ([crop.bat](crop.bat))**: `screenshots` 폴더에 이미지를 넣고 `crop.bat` 실행 후 엔터만 치면 `extracted_images` 폴더에 짤방만 잘라내어 저장합니다.
 
 ---
 
 ## 🇨🇳 中文简述
 
-自动识别并裁剪 YouTube、X (Twitter)、Instagram 和各类论坛评论区中表情包与配图的工具。纯本地离线处理，不上传任何数据。
+自动识别并裁剪 YouTube、X (Twitter)、Instagram 和各类论坛评论区中表情包与配图的工具。纯本地离线处理，无需上传数据。
 
-- **Android 客户端 ([CommentCrop.apk](CommentCrop.apk))**：截屏后点击系统“分享”选择 CommentCrop 即可直接识别并裁剪，支持复制、相册保存与多图批量处理。
+- **Android 客户端 ([CommentCrop.apk](CommentCrop.apk))**：
+  - **端侧 Vision AI**：自动过滤评论文字干扰，精准锁定纯图片区域。
+  - **点击吸附（Tap-to-Snap）**：在预览中轻点图片任意位置，选框即可自动吸附到图片边缘。
+  - **系统分享联动**：截图后点击“分享”选择 CommentCrop 即可快速裁剪、复制或保存，支持多图批量处理。
 - **Windows 电脑端 ([crop.bat](crop.bat))**：将截图放入 `screenshots` 文件夹，运行 `crop.bat` 按回车即可自动批量裁剪至 `extracted_images`。
 
 ---
@@ -70,7 +83,10 @@ Both versions support English, Korean (한국어), Chinese (中文), and Japanes
 
 YouTube、X（Twitter）、Instagram、掲示板などのコメント欄に添付されたミーム画像・写真を自動で切り抜くツールです。外部通信なしで端末内のみで完結します。
 
-- **Android アプリ ([CommentCrop.apk](CommentCrop.apk))**：スクショ後、システムの「共有」から CommentCrop を選ぶだけで枠を自動検出し保存・コピー。一括切り抜きにも対応。
+- **Android アプリ ([CommentCrop.apk](CommentCrop.apk))**：
+  - **オンデバイス Vision AI**：コメント文字を事前除去し、純粋な画像領域のみを高精度に認識。
+  - **Tap-to-Snap**：プレビュー上の画像をタップするだけで、四方の境界線に吸着して枠を自動調整。
+  - **共有メニュー連携**：スクショ撮影後「共有」→ CommentCrop を選ぶだけですぐに切り抜き・コピー・保存が可能。複数画像の一括処理にも対応。
 - **Windows ツール ([crop.bat](crop.bat))**：`screenshots` フォルダに画像を入れて `crop.bat` を起動し Enter を押すだけで、`extracted_images` に一括保存されます。
 
 ---
