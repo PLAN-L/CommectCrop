@@ -17,10 +17,10 @@ All image processing runs 100% locally on your device using on-device vision AI 
 Download: **[CommentCrop.apk](CommentCrop.apk)** (Requires Android 8.0+)
 
 ### Highlights
-- **On-Device Vision AI**: Uses ML Kit OCR to filter out messy comment text, IDs, and timestamps, isolating pure meme image boundaries.
+- **On-Device Vision AI**: Intelligent boundary detection with ML Kit that filters comment UI while preserving black borders, captions, speech bubbles, and outer card corners.
 - **Tap-to-Snap**: Tap anywhere on a meme inside the screenshot preview, and the crop box snaps tightly to the image borders automatically.
 - **System Share Integration**: Crop immediately after taking a screenshot via system Share without switching apps.
-- **Batch Cropping**: Pick multiple screenshots from your gallery to auto-crop them all in one go.
+- **Batch Cropping & Gallery Import**: Pick multiple screenshots to auto-crop them all in one go, or import photos directly into your app gallery.
 
 ### How to use
 1. Download and install `CommentCrop.apk` on your phone.
@@ -59,10 +59,10 @@ Both versions support English, Korean (한국어), Chinese (中文), and Japanes
 유튜브, 트위터(X), 인스타그램, 커뮤니티 댓글에 달린 짤방(사진/밈)을 자동으로 깔끔하게 잘라주는 툴입니다. 외부 서버 전송 없이 스마트폰/PC에서 100% 로컬로 작동합니다.
 
 - **안드로이드 앱 ([CommentCrop.apk](CommentCrop.apk))**:
-  - **온디바이스 비전 AI**: 텍스트를 감지해 걸러내고 순수 짤 영역만 정밀하게 인식합니다.
+  - **온디바이스 비전 AI**: 검은색 테두리(레터박스)와 짤 내부 텍스트, 자막, 말풍선, 외곽 모서리를 온전히 보존하며 순수 짤 영역만 정밀하게 인식합니다.
   - **Tap-to-Snap**: 화면 속 짤을 손가락으로 툭 터치하면 테두리에 자석처럼 딱 달라붙습니다.
   - **초간편 사용**: 캡처 후 시스템 [공유] → [CommentCrop]을 누르면 즉시 크롭 및 복사/저장.
-  - 앱에서 여러 스크린샷을 한 번에 일괄 자동 크롭할 수도 있습니다.
+  - 다중 스크린샷 일괄 자동 크롭 및 폰 갤러리 사진을 앱 내부 보관함으로 바로 가져오는 기능을 지원합니다.
 - **윈도우 PC ([crop.bat](crop.bat))**: `screenshots` 폴더에 이미지를 넣고 `crop.bat` 실행 후 엔터만 치면 `extracted_images` 폴더에 짤방만 잘라내어 저장합니다.
 
 ---
